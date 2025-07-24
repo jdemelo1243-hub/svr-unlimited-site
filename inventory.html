@@ -21,24 +21,31 @@
 
 <main>
   <h1 style="text-align:center; margin-top:1em;">Our Available Vehicles</h1>
-  <section class="inventory">
+
+  <!-- 🔍 Search Bar -->
+  <div style="text-align:center; margin: 1em;">
+    <input type="text" id="searchInput" placeholder="Search by make, model, year..." style="padding:0.5em; width: 80%; max-width: 400px;" onkeyup="filterCars()" />
+  </div>
+
+  <!-- 🚘 Car Listings -->
+  <section class="inventory" id="carInventory">
 
     <article class="car">
-      <img src="https://images.unsplash.com/photo-1549921296-3ec92c05b81b?auto=format&fit=crop&w=600&q=80" alt="BMW X5" />
+      <a href="cars/bmw-x5.html"><img src="https://images.unsplash.com/photo-1549921296-3ec92c05b81b?auto=format&fit=crop&w=600&q=80" alt="BMW X5" /></a>
       <h2>2022 BMW X5</h2>
       <p>Mileage: 25,000 km</p>
       <p>Price: $58,000</p>
     </article>
 
     <article class="car">
-      <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=600&q=80" alt="Audi Q7" />
+      <a href="cars/audi-q7.html"><img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=600&q=80" alt="Audi Q7" /></a>
       <h2>2021 Audi Q7</h2>
       <p>Mileage: 35,000 km</p>
       <p>Price: $52,000</p>
     </article>
 
     <article class="car">
-      <img src="https://images.unsplash.com/photo-1611736275343-96ecac3d8123?auto=format&fit=crop&w=600&q=80" alt="Range Rover Sport" />
+      <a href="cars/range-rover-sport.html"><img src="https://images.unsplash.com/photo-1611736275343-96ecac3d8123?auto=format&fit=crop&w=600&q=80" alt="Range Rover Sport" /></a>
       <h2>2020 Range Rover Sport</h2>
       <p>Mileage: 40,000 km</p>
       <p>Price: $63,000</p>
@@ -46,6 +53,7 @@
 
   </section>
 </main>
+
 
 <footer>
   <p>&copy; 2025 SVR Unlimited</p>
