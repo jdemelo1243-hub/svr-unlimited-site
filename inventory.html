@@ -58,5 +58,16 @@
 <footer>
   <p>&copy; 2025 SVR Unlimited</p>
 </footer>
+  <script>
+  function filterCars() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const cars = document.querySelectorAll(".car");
+    cars.forEach(car => {
+      const text = car.innerText.toLowerCase();
+      car.style.display = text.includes(input) ? "block" : "none";
+    });
+  }
+</script>
+
 </body>
 </html>
